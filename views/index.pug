@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head    
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='description' content='A link shortener')
+    link(id='favicon' rel='icon' href='https://cdn.glitch.com/326b20a4-b06a-47c2-b78f-182d8a4d3766%2FsmallmoonCrop.ico?1549589191663' type='image/x-icon')    
+    title Preview ShortURL
+  body    
+    .container
+      .smll-url
+        h1
+          a(href="https://smll-url.glitch.me") smll-url
+        form#url_form
+          label(for="url_input") Paste URL Here
+          input#url_input.inputs(type="url" name='url' autocomplete='off' required)
+          button#submit-btn(style="display: none") Get smll-url
+        form
+          label(for="short_url") Shortened URL
+          input#short_url.inputs(type="text" name="short_url" autocomplete="off" required readonly)
+          button.btn.copy-btn(type="button" data-clipboard-target="#short_url") Copy to Clipboard
+        .alert Link Copied
+      .footer
+        p by 
+          a(href="https://github.com/br3ntor") br3ntor
+    script(src="../public/index.js")
+    noscript      
+      include /nojs.pug

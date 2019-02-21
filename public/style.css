@@ -1,0 +1,187 @@
+@font-face {
+  font-family: Roboto;
+  src: url('https://cdn.glitch.com/326b20a4-b06a-47c2-b78f-182d8a4d3766%2FRoboto-Regular.ttf?1549589192100') format("truetype");
+/*   font-display: swap; */
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #242d25;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+h1 {
+  margin: 50px 0;
+}
+
+h1 a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 5px solid #4db6ac;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+a {
+  color: #4db6ac;
+}
+
+form,
+.prev-container {
+  width: 80%;
+}
+
+label {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.nojs-container .smll-url {
+  min-height: 370px;
+}
+
+.url-prev {
+  background: white;
+  color: black;
+  padding: 17px;
+  word-break: break-all;
+  margin: 10px 0 50px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+
+}
+
+.container,
+.nojs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-height: 640px;
+}
+
+.smll-url {
+  position: relative;
+  background: #455a64;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.inputs {
+  padding: 17px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 50px;
+  transition: background-color 1000ms linear;
+}
+
+.btn {
+  font-family: 'Roboto';
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  padding: 12px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #455a64;
+  border: 2px solid #4db6ac;
+  border-radius: 2px;
+  color: white;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* Enabled if not on mobile */
+.non-touch:hover,
+.nojs-container .btn:hover {
+  background: #4db6ac;
+}
+
+.btn:active,
+.nojs-container .btn:active {
+  background: #009688;
+}
+
+.alert {
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  padding: 0.55rem 4.5rem;
+  border: 2px solid #856404;
+  color: #856404;
+  background-color: #fff3cd;
+  border-radius: 0.25rem;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.animate-reveal {
+  animation: fadeinout 2s linear forwards;
+}
+
+.input-bg-success {
+  background-color: #b2ffaf;
+  transition: 100ms;
+}
+
+.input-bg-info {
+  background-color: #fff3cd;
+  transition: 100ms;
+}
+
+.input-bg-error {
+  background-color: #ffafaf;
+  transition: 100ms;
+}
+
+/* Keyframes for animation */
+@keyframes fadeinout {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  5%,
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .smll-url {
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
+
+@media (max-height: 640px) {
+  .smll-url {
+    margin-top: 0;
+    border-radius: 0;
+  }
+}

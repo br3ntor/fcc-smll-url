@@ -65,9 +65,8 @@ import 'whatwg-fetch';
 
     const url = url_input.value;
     const linkObj = createLinkObj(url);
-    const re = RegExp(linkObj.hostname);
-
-    if (re.test(location.hostname)) {
+        
+    if (linkObj.hostname === location.hostname) {
       shortURLInput.value = 'Nope!';
       addRemoveClass(shortURLInput, 'input-bg-error', 500);
     } else {

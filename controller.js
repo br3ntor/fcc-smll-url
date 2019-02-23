@@ -22,7 +22,7 @@ module.exports = {
     );
   },
 
-  preview: (req, res) => {
+  preview: (req, res) => {    
     db.get(
       'SELECT * FROM links WHERE url_id = ?',
       req.params.id,
@@ -33,7 +33,7 @@ module.exports = {
         if (row) {
           res.render('preview', {
             original_url: row.url,
-            short_url: `${req.protocol}://${req.headers.host}/api/shorturl/${
+            short_url: `https://${req.headers.host}/api/shorturl/${
               row.url_id
             }`
           });
@@ -44,7 +44,7 @@ module.exports = {
 
   makeShortURL: (req, res) => {
     const url = new URL(req.body.url || req.body.urlnojs);
-    const shortURL = `${req.protocol}://${req.headers.host}/api/shorturl/`;
+    const shortURL = `https://${req.headers.host}/api/shorturl/`;
 
 
     if (url.host === req.headers.host || url.origin === 'null') {

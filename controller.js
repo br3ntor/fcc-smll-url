@@ -33,9 +33,7 @@ module.exports = {
         if (row) {
           res.render('preview', {
             original_url: row.url,
-            short_url: `https://${req.headers.host}/api/shorturl/${
-              row.url_id
-            }`
+            short_url: `https://${req.hostname}/api/shorturl/${row.url_id}`
           });
         }
       }
@@ -44,10 +42,10 @@ module.exports = {
 
   makeShortURL: (req, res) => {
     const url = new URL(req.body.url || req.body.urlnojs);
-    const shortURL = `https://${req.headers.host}/api/shorturl/`;
+    const shortURL = `https://${req.hostname}/api/shorturl/`;
 
 
-    if (url.host === req.headers.host || url.origin === 'null') {
+    if (url.host === req.hostname || url.origin === 'null') {
       res.send('Not gonna happen.');
       return;
     }

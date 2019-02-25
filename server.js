@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Redirects to https if http
+// I wonder if this should be here or in the router
 app.use((req, res, next) => {
   if (!req.secure) {
     res.redirect(`https://${req.hostname}${req.originalUrl}`);

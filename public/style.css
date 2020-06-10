@@ -1,13 +1,13 @@
 @font-face {
   font-family: Roboto;
-  src: url('https://cdn.glitch.com/326b20a4-b06a-47c2-b78f-182d8a4d3766%2FRoboto-Regular.ttf?1549589192100') format("truetype");
-/*   font-display: swap; */
+  src: url("Roboto-Regular.ttf") format("truetype");
+  /*   font-display: swap; */
   font-weight: 400;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   background-color: #242d25;
   text-align: center;
@@ -62,7 +62,6 @@ label {
   -moz-user-select: all;
   -ms-user-select: all;
   user-select: all;
-
 }
 
 .container,
@@ -99,7 +98,7 @@ label {
 }
 
 .btn {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   margin-top: 15px;
   letter-spacing: 2px;
   font-size: 1rem;
@@ -160,7 +159,6 @@ label {
 
 /* Keyframes for animation */
 @keyframes fadeinout {
-
   0%,
   100% {
     opacity: 0;

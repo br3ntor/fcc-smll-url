@@ -1,35 +1,33 @@
 {
-  "name": "shorturl",
-  "version": "0.0.1",
-  "description": "API project for freeCodeCamp",
+  "name": "racknerd-smll-url",
+  "version": "1.0.0",
+  "description": "update for fcc project",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "prod": "node server.js https",
     "build": "parcel build views/index.pug --no-source-maps"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.0.0-alpha.2",
-    "promise-polyfill": "^8.1.0",
-    "sqlite3": "^4.0.6",
-    "whatwg-fetch": "^3.0.0"
-  },
-  "engines": {
-    "node": "10.x.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://hyperdev.com/#!/project/welcome-project"
+    "url": "git+https://github.com/br3ntor/fcc-smll-url.git"
   },
-  "keywords": [
-    "node",
-    "hyperdev",
-    "express"
-  ],
-  "license": "MIT",
+  "author": "br3ntor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/br3ntor/fcc-smll-url/issues"
+  },
+  "homepage": "https://github.com/br3ntor/fcc-smll-url#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^4.2.0"
+  },
   "devDependencies": {
-    "autoprefixer": "^9.4.8",
-    "parcel-bundler": "^1.11.0",
-    "pug": "^2.0.3"
+    "autoprefixer": "^9.8.0",
+    "parcel-bundler": "^1.12.4",
+    "promise-polyfill": "^8.1.3",
+    "pug": "^3.0.0",
+    "whatwg-fetch": "^3.0.0"
   }
 }

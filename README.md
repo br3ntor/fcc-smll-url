@@ -17,5 +17,11 @@ VALUES (
 ```
 
 - Uses SQLite for db.
-- Uses Parcel to do a few things
+- Uses Parcel to do js polyfills, autoprefixers for css, minification
 
+---
+
+To run
+
+1. Create db table by running script hopefully
+2. Run developement with `npm start` and production with `npm run prod`

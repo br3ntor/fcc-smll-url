@@ -5,7 +5,7 @@ const shortid = require('shortid');
 
 const dbFile = './.data/sqlite.db';
 const db = new sqlite3.Database(dbFile);
-const protocol = 'http' || process.argv[2];
+const protocol = process.argv[2] || 'http';
 const port = protocol === 'http' ? ':3000' : '';
 
 module.exports = {

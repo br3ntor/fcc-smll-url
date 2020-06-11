@@ -35,7 +35,7 @@ import 'whatwg-fetch';
     copy_btn.addEventListener('click', () => {
       navigator
         .share({
-          url: shortURLInput.value
+          url: shortURLInput.value,
         })
         .then(() => console.log('Successful share'))
         .catch(error => console.log('Error sharing', error));
@@ -44,7 +44,7 @@ import 'whatwg-fetch';
   } else {
     // Clipboardjs instantiate and success and error handlers
     const clipboard = new ClipboardJS('.copy-btn');
-    clipboard.on('success', function(e) {
+    clipboard.on('success', function (e) {
       // console.info('Action:', e.action);
       // console.info('Text:', e.text);
       // console.info('Trigger:', e.trigger);
@@ -54,7 +54,7 @@ import 'whatwg-fetch';
       }
       e.clearSelection(); // Not sure what this does
     });
-    clipboard.on('error', function(e) {
+    clipboard.on('error', function (e) {
       console.error('Action:', e.action);
       console.error('Trigger:', e.trigger);
     });
@@ -65,7 +65,7 @@ import 'whatwg-fetch';
 
     const url = url_input.value;
     const linkObj = createLinkObj(url);
-        
+
     if (linkObj.hostname === location.hostname) {
       shortURLInput.value = 'Nope!';
       addRemoveClass(shortURLInput, 'input-bg-error', 500);
@@ -112,14 +112,14 @@ import 'whatwg-fetch';
 
   // POST is cool!
   function getShortURL(url) {
-    const api = location.href + 'api/shorturl/new';
+    const api = location.href + 'new';
 
     return fetch(api, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ url: url })
+      body: JSON.stringify({ url: url }),
     })
       .then(response => response.json())
       .catch(error => console.log(error));
@@ -142,7 +142,7 @@ import 'whatwg-fetch';
       hostname: a.hostname,
       href: a.href,
       origin: a.origin,
-      protocol: a.protocol
+      protocol: a.protocol,
     };
   }
 })();

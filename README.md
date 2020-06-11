@@ -25,3 +25,8 @@ To run
 
 1. Create db table by running script hopefully
 2. Run developement with `npm start` and production with `npm run prod`
+
+Todo:
+
+- Currently trying to make the url actually as short as possbile right now
+- Take care of some cases where bad input causes a hangup where no response is sent

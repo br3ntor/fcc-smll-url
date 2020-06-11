@@ -21,6 +21,7 @@
   "homepage": "https://github.com/br3ntor/fcc-smll-url#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "shortid": "^2.2.15",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {

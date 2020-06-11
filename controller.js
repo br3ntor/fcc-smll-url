@@ -71,7 +71,8 @@ module.exports = {
         console.log(err);
         res.json({ error: "It's down or doesn't exist, or invalid URL" });
       } else {
-        console.log(`address: ${address} family: IPv${family}s`);
+        // Prob not good to log here in production
+        // console.log(`address: ${address} family: IPv${family}s`);
         db.serialize(() => {
           db.get('SELECT * FROM links WHERE url = ?', url.href, (err, row) => {
             if (err) {

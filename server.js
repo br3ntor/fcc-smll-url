@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
-app.use('/*', router);
+app.use(router);
 
 app.use((req, res) => {
   res.status(404).send('404: Page not Found');
@@ -23,4 +23,10 @@ app.use((req, res) => {
 
 app.listen(port, function () {
   console.log('Node.js listening ...');
+
+  if (process.env.NODE_ENV === 'production') {
+    console.log('We are running in production mode');
+  } else {
+    console.log('We are running in development mode');
+  }
 });

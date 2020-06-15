@@ -1,15 +1,20 @@
 # URL Shortener V2
 
-- Uses SQLite for db.
-- Uses Parcel to do js polyfills, autoprefixers for css, minification
-- Works with Internet Explorer, Edge, Firefox, and Chrome.
-- Works with all screen sizes
-- Can preview links by appending /p at the end like so
+Make long URLs short.
 
----
+Short links can be previewed by appending a /p to the link.
 
-To run
+e.g. https://brent-dev.com/z82NzS6Gd/p
 
-1. Create db table in sqlite from the create.sql script.
+### Steps to run:
+
+1. Use sqlite to create db table from the create.sql script.
 2. Build static files with npm run build
 3. Start with npm start for dev or npm run prod to set to https
+
+### About
+
+- Uses SQLite for db.
+- Uses Parcel for js polyfills, css prefixes, and minification.
+- Works with Internet Explorer, Edge, Firefox, and Chrome.
+- Usable on any screen size

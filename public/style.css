@@ -1,13 +1,13 @@
 @font-face {
   font-family: Roboto;
-  src: url("Roboto-Regular.ttf") format("truetype");
+  src: url('Roboto-Regular.ttf') format('truetype');
   /*   font-display: swap; */
   font-weight: 400;
 }
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
   background-color: #242d25;
   text-align: center;
@@ -98,7 +98,7 @@ label {
 }
 
 .btn {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   margin-top: 15px;
   letter-spacing: 2px;
   font-size: 1rem;
@@ -134,8 +134,13 @@ label {
   border-radius: 0.25rem;
 }
 
-.footer {
-  margin-top: 40px;
+.info {
+  margin-top: 20px;
+  color: #a7a7a7;
+}
+
+.info a {
+  color: #41a59c;
 }
 
 .animate-reveal {
@@ -155,6 +160,10 @@ label {
 .input-bg-error {
   background-color: #ffafaf;
   transition: 100ms;
+}
+
+.hide {
+  display: none;
 }
 
 /* Keyframes for animation */

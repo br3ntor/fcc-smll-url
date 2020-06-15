@@ -6,8 +6,8 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='description' content='A link shortener')
     link(id='favicon' rel='icon' href='../public/moon.ico' type='image/x-icon')
-    link(rel="stylesheet", href="/public/style.css")    
-    title Preview ShortURL
+    link(rel="stylesheet" href="/public/style.css")    
+    title Preview Short URL
   body    
     .nojs-container
       .smll-url
@@ -18,8 +18,7 @@ html(lang='en')
           p.url-prev= original_url
           h2 Shortened URL
           p.url-prev= short_url       
-      .footer
-        p by 
-          a(href="https://github.com/br3ntor") br3ntor
-    
-    
+      .info
+        p Append '/p' to any short URL to preview its redirect URL.
+        p 
+          a(href="https://brent-dev.com/BSUrrG1cx/p") https://brent-dev.com/BSUrrG1cx/p  

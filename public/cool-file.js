@@ -10,6 +10,10 @@ import 'whatwg-fetch';
   const url_form = document.querySelector('#url_form');
   const submit_btn = document.getElementById('submit-btn');
   const copy_btn = document.querySelector('.copy-btn');
+  const jsContainer = document.querySelector('.container');
+
+  // Remove class when js is enabled
+  jsContainer.classList.remove('hide');
 
   // Event handlers
   url_input.addEventListener('paste', handlePaste);

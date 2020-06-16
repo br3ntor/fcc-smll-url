@@ -6,12 +6,12 @@ html(lang='en')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='description' content='A link shortener')
     link(id='favicon' rel='icon' href='../public/moon.ico' type='image/x-icon')    
-    title Make Short URL
+    title Create Smll URL
   body    
     .container.hide
       .smll-url
         h1
-          a(href="https://brent-dev.com") smll-url
+          a(href="https://smll-url.xyz") smll-url
         form#url_form
           label(for="url_input") Paste URL Here
           input#url_input.inputs(type="url" name='url' autocomplete='off' required)
@@ -22,9 +22,9 @@ html(lang='en')
           button.btn.copy-btn(type="button" data-clipboard-target="#short_url") Copy to Clipboard
         .alert Link Copied
       .info
-        p Append '/p' to any short URL to preview its redirect URL.
+        p Add '/p' to the end of any short URL to see the original URL.
         p 
-          a(href="https://brent-dev.com/BSUrrG1cx/p") https://brent-dev.com/BSUrrG1cx/p      
+          a(href="https://smll-url.xyz/b7QeeWy_E/p") https://smll-url.xyz/b7QeeWy_E/p      
     script(src="../public/index.js")
     noscript      
       include /nojs.pug

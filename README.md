@@ -10,6 +10,8 @@ e.g. https://brent-dev.com/z82NzS6Gd/p
 
 1. Create sqldatabase and run table creation script
 
+   `mkdir .data`
+
    `sqlite3 .data/sqlite.db < create.sql`
 
 2. Install packages:

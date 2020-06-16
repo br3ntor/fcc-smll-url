@@ -6,11 +6,21 @@ Short links can be previewed by appending a /p to the link.
 
 e.g. https://brent-dev.com/z82NzS6Gd/p
 
-### Steps to run:
+### Steps to run after cloning repository:
 
-1. Use sqlite to create db table from the create.sql script.
-2. Build static files with npm run build
-3. Start with npm start for dev or npm run prod to set to https
+1. Create sqldatabase and run table creation script
+
+   `sqlite3 .data/sqlite.db < create.sql`
+
+2. Install packages:
+
+   `npm install`
+
+3. Build static files:
+
+   `npm run build`
+
+4. Start with `npm start` for dev or `npm run prod` to set to https and `NODE_ENV=production`
 
 ### About
 

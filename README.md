@@ -4,7 +4,7 @@ Make long URLs short.
 
 Short links can be previewed by appending a /p to the link.
 
-e.g. https://brent-dev.com/z82NzS6Gd/p
+e.g. https://smll-url.xyz/b7QeeWy_E/p
 
 ### Steps to run after cloning repository:
 

@@ -15,9 +15,10 @@ html(lang='en')
           a(href="https://smll-url.xyz/") smll-url
         .prev-container
           h2 Original URL
-          p.url-prev= original_url
+          p.url-prev
+            a(href=original_url) #{original_url}
           h2 Shortened URL
-          p.url-prev= short_url       
+          p.url-prev.us #{short_url}
       .info
         p Add '/p' to the end of any short URL to see the original URL.
         p 

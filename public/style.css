@@ -45,6 +45,10 @@ label {
   margin-bottom: 10px;
 }
 
+/* #url-form {
+  margin-bottom: 44px;
+} */
+
 /* .nojs-container .smll-url {
   min-height: 370px;
 } */
@@ -58,10 +62,15 @@ label {
   border: 1px solid #ccc;
   border-radius: 3px;
   font-size: 18px;
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
-  user-select: all;
+}
+
+.url-prev a {
+  color: #006fe6;
+  text-decoration: none;
+}
+
+.url-prev a:hover {
+  text-decoration: underline;
 }
 
 /* .container,
@@ -101,6 +110,7 @@ label {
 .btn {
   font-family: 'Roboto';
   margin-top: 15px;
+  margin-bottom: 44px;
   letter-spacing: 2px;
   font-size: 1rem;
   padding: 12px 15px;
@@ -127,8 +137,8 @@ label {
 }
 
 .alert {
-  position: relative;
-  top: -100px;
+  position: absolute;
+  bottom: 100px;
   opacity: 0;
   padding: 0.55rem 4.5rem;
   border: 2px solid #856404;
@@ -163,6 +173,13 @@ label {
 .input-bg-error {
   background-color: #ffafaf;
   transition: 100ms;
+}
+
+.us {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
 }
 
 .hide {

@@ -9,7 +9,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: white;
-  background-color: #242d25;
+  background-color: #191f1a;
   text-align: center;
   line-height: 1.4rem;
 }
@@ -85,7 +85,7 @@ label {
 
 .smll-url {
   position: relative;
-  background: #455a64;
+  background: #2e3c42;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ label {
   padding: 12px 15px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #455a64;
+  background-color: #2e3c42;
   border: 2px solid #4db6ac;
   border-radius: 2px;
   color: white;
@@ -153,6 +153,21 @@ label {
 }
 
 .info a {
+  color: #41a59c;
+}
+
+.spacer {
+  border-bottom: 2px dashed #404040;
+  width: 90%;
+  max-width: 600px;
+}
+
+.contact {
+  margin: 20px 0;
+  color: #a7a7a7;
+}
+
+.contact a {
   color: #41a59c;
 }
 

@@ -6,6 +6,11 @@ Short links can be previewed by appending a /p to the link.
 
 e.g. https://smll-url.xyz/b7QeeWy_E/p
 
+### Software Prerequisites:
+
+- nodejs & npm
+- sqlite3
+
 ### Steps to run after cloning repository:
 
 1. Create sqldatabase and run table creation script
@@ -27,6 +32,6 @@ e.g. https://smll-url.xyz/b7QeeWy_E/p
 ### About
 
 - Uses SQLite for db.
-- Uses Parcel for js polyfills, css prefixes, and minification.
 - Works with Internet Explorer, Edge, Firefox, and Chrome.
-- Usable on any screen size
+- Uses Parcel for js polyfills, css prefixes, and minification.
+- Responsive, suitable for phone or desktop

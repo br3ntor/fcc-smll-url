@@ -93,6 +93,8 @@ label {
   width: 100%;
   max-width: 800px;
   border-radius: 5px;
+  border: 1px solid #00786d;
+  box-sizing: border-box;
 }
 
 .inputs {
@@ -218,6 +220,8 @@ label {
   .smll-url {
     margin-top: 0;
     border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #00786d;
   }
 }
 
